@@ -10,6 +10,7 @@
 .prize-highlights{display:grid;gap:14px;margin:24px 0}.prize-highlight{padding:22px;background:linear-gradient(120deg,#242b30,#14181c);border:1px solid #697780;border-left:4px solid var(--lcd)}.prize-highlight .eyebrow{color:var(--lcd);letter-spacing:1px;font-size:12px}.prize-highlight p{margin:10px 0 0;font-size:16px;line-height:1.9}.prize-highlight strong{color:var(--lcd)}.s-eligibility{padding:14px 16px;background:#d7e68f0b;border-left:2px solid var(--lcd);font-size:13px}.s-eligibility b{color:var(--lcd)}.s-eligibility small{font-size:12px}
 .hero-video{display:block;min-width:0;width:100%;align-self:center;color:var(--white);text-decoration:none;background:#0d1115;border:1px solid #63717b;box-shadow:16px 18px 0 #c9d7df0a}.hero-video-image{position:relative;aspect-ratio:16/9;overflow:hidden;background:#080a0c}.hero-video-image img{display:block;width:100%;height:100%;object-fit:cover}.video-play{position:absolute;inset:0;margin:auto;width:56px;height:40px;display:grid;place-items:center;background:#bf2424e8;border-radius:9px;font-size:20px;padding-left:3px}.hero-video-caption{padding:18px 20px}.hero-video-caption h2{font-size:18px;line-height:1.6;margin:8px 0}.watch-label{font-size:12px;color:var(--lcd)}.hero-video:hover{border-color:var(--lcd)}@media(max-width:700px){.hero-video{max-width:450px;justify-self:center;box-shadow:8px 10px 0 #c9d7df0a}}
 .hero-videos{display:grid;gap:20px;min-width:0;width:100%;align-self:center}.hero-videos .hero-video{box-shadow:8px 10px 0 #c9d7df0a}.hero-videos .hero-video-caption{padding:12px 16px}.hero-videos .hero-video-caption h2{font-size:16px;margin:5px 0}@media(max-width:700px){.hero-videos{max-width:450px;justify-self:center}}
+.hero-videos{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:620px}.hero-videos .hero-video{width:100%;min-width:0;box-shadow:none}.hero-videos .hero-video-caption{padding:10px 12px}.hero-videos .hero-video-caption h2{font-size:13px;line-height:1.6;overflow-wrap:anywhere}.hero-videos .eyebrow{font-size:10px;letter-spacing:1px}.hero-videos .watch-label{font-size:11px}.hero-videos .video-play{width:38px;height:28px;font-size:14px}.hero-videos .mv-schedule{font:600 12px/1.6 system-ui,-apple-system,sans-serif;letter-spacing:0;color:var(--lcd);margin:7px 0}.heroin{grid-template-columns:1fr 1.15fr;gap:40px}@media(max-width:700px){.heroin{grid-template-columns:1fr;gap:28px}.hero-videos{grid-template-columns:repeat(2,minmax(0,1fr));max-width:500px;gap:10px}.hero-videos .hero-video-caption{padding:10px}.hero-videos .hero-video-caption h2{font-size:12px}.hero-videos .mv-schedule{font-size:11px}}
 </style>
 <link rel="apple-touch-icon" href="18303AF3-7F93-46EB-BE63-7D0864AA91E8.jpeg">
 <link rel="icon" type="image/jpeg" href="18303AF3-7F93-46EB-BE63-7D0864AA91E8.jpeg">
@@ -39,7 +40,7 @@
 <div class="hero-videos">
 <a class="hero-video" href="https://www.youtube.com/watch?v=tFTeMdvyfBs" target="_blank" rel="noopener noreferrer" aria-label="STARGLOW / Slam Dunk -Music Video- のYouTubeページを開く">
 <div class="hero-video-image"><img src="https://i.ytimg.com/vi/tFTeMdvyfBs/hqdefault.jpg" alt="STARGLOW / Slam Dunk -Music Video-" width="480" height="360"><span class="video-play" aria-hidden="true">▶</span></div>
-<div class="hero-video-caption"><span class="eyebrow">MUSIC VIDEO</span><h2>STARGLOW / Slam Dunk -Music Video-</h2><span class="watch-label">YouTube公開ページへ ↗</span></div>
+<div class="hero-video-caption"><span class="eyebrow">MUSIC VIDEO</span><h2>STARGLOW / Slam Dunk -Music Video-</h2><p class="mv-schedule">10/26（月）21:00公開</p><span class="watch-label">YouTube公開ページへ ↗</span></div>
 </a>
 <a class="hero-video" href="https://www.youtube.com/watch?v=tZwkBuaOQw8" target="_blank" rel="noopener noreferrer" aria-label="STARGLOW / Slam Dunk -Teaser- をYouTubeで見る">
 <div class="hero-video-image"><img src="https://i.ytimg.com/vi/tZwkBuaOQw8/hqdefault.jpg" alt="STARGLOW / Slam Dunk -Teaser-" width="480" height="360"><span class="video-play" aria-hidden="true">▶</span></div>
@@ -310,6 +311,7 @@ for(const b of document.querySelectorAll('[data-key]')){const key='slamdunk_v1_'
 // 各サービスの購入URLを設定すると、対応する購入リンクを表示します。
 const downloadUrls={itunes:'',recochoku:'',mora:'',dmusic:'',amazon:'',mumo:''};
 Object.values(downloadUrls).forEach((url,i)=>{if(!/^https:\/\//i.test(url))return;const box=document.querySelectorAll('.download .empty')[i];if(!box)return;const link=document.createElement('a');link.className='btn';link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=box.firstChild.textContent+' ↗';box.replaceWith(link);});
+const mvPremiere=document.querySelector('.mv-schedule');if(mvPremiere&&Date.now()>=Date.parse('2026-10-26T21:00:00+09:00'))mvPremiere.textContent='公開中';
 </script>
 </body>
 </html>
