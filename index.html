@@ -11,6 +11,7 @@
 .hero-video{display:block;min-width:0;width:100%;align-self:center;color:var(--white);text-decoration:none;background:#0d1115;border:1px solid #63717b;box-shadow:16px 18px 0 #c9d7df0a}.hero-video-image{position:relative;aspect-ratio:16/9;overflow:hidden;background:#080a0c}.hero-video-image img{display:block;width:100%;height:100%;object-fit:cover}.video-play{position:absolute;inset:0;margin:auto;width:56px;height:40px;display:grid;place-items:center;background:#bf2424e8;border-radius:9px;font-size:20px;padding-left:3px}.hero-video-caption{padding:18px 20px}.hero-video-caption h2{font-size:18px;line-height:1.6;margin:8px 0}.watch-label{font-size:12px;color:var(--lcd)}.hero-video:hover{border-color:var(--lcd)}@media(max-width:700px){.hero-video{max-width:450px;justify-self:center;box-shadow:8px 10px 0 #c9d7df0a}}
 .hero-videos{display:grid;gap:20px;min-width:0;width:100%;align-self:center}.hero-videos .hero-video{box-shadow:8px 10px 0 #c9d7df0a}.hero-videos .hero-video-caption{padding:12px 16px}.hero-videos .hero-video-caption h2{font-size:16px;margin:5px 0}@media(max-width:700px){.hero-videos{max-width:450px;justify-self:center}}
 .hero-videos{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:620px}.hero-videos .hero-video{width:100%;min-width:0;box-shadow:none}.hero-videos .hero-video-caption{padding:10px 12px}.hero-videos .hero-video-caption h2{font-size:13px;line-height:1.6;overflow-wrap:anywhere}.hero-videos .eyebrow{font-size:10px;letter-spacing:1px}.hero-videos .watch-label{font-size:11px}.hero-videos .video-play{width:38px;height:28px;font-size:14px}.hero-videos .mv-schedule{font:600 12px/1.6 system-ui,-apple-system,sans-serif;letter-spacing:0;color:var(--lcd);margin:7px 0}.heroin{grid-template-columns:1fr 1.15fr;gap:40px}@media(max-width:700px){.heroin{grid-template-columns:1fr;gap:28px}.hero-videos{grid-template-columns:repeat(2,minmax(0,1fr));max-width:500px;gap:10px}.hero-videos .hero-video-caption{padding:10px}.hero-videos .hero-video-caption h2{font-size:12px}.hero-videos .mv-schedule{font-size:11px}}
+.hero-media{width:100%;min-width:0;align-self:center}.hero-videos{align-items:stretch}.hero-videos .hero-video{display:flex;flex-direction:column;align-self:stretch}.hero-video-image{flex-shrink:0}.hero-videos .hero-video-caption{flex:1;display:flex;flex-direction:column}.hero-videos .hero-video-caption h2{min-height:3.2em}.hero-videos .mv-schedule{margin-top:auto;padding-top:6px}.hero-download{margin-top:24px}.hero-download>h2{font:13px monospace;letter-spacing:3px;margin:0 0 15px}.basket-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px 6px}.basket-download{display:flex;flex-direction:column;align-items:center;text-align:center;border:0;background:none;padding:0 2px;color:var(--white);text-decoration:none;min-width:0;font:inherit;line-height:1.4}.basket-download:disabled{opacity:.78}.basket-download[href]{cursor:pointer}.basket-ball{font-size:46px;line-height:1.15;filter:drop-shadow(0 3px 6px #0008)}.basket-service{font-size:11px;min-height:2.8em;display:flex;align-items:center;justify-content:center;margin-top:6px;overflow-wrap:anywhere}.gift-mark{font-size:10px;min-height:1.5em;color:var(--lcd)}.dl-pending{font-size:10px;color:var(--muted)}.basket-download[href]:hover .basket-ball{transform:translateY(-3px)}.official-download{display:inline-block;font-size:11px;color:var(--muted);margin-top:15px}.hero p.mv-schedule{letter-spacing:0}@media(max-width:700px){.hero-media{max-width:500px;justify-self:center}.basket-ball{font-size:43px}.basket-service{font-size:10px}.hero-download{margin-top:22px}}
 </style>
 <link rel="apple-touch-icon" href="18303AF3-7F93-46EB-BE63-7D0864AA91E8.jpeg">
 <link rel="icon" type="image/jpeg" href="18303AF3-7F93-46EB-BE63-7D0864AA91E8.jpeg">
@@ -37,16 +38,24 @@
 <a class="btn" href="#presave">キャンペーンをチェック ↓</a>
 </div>
 </div>
-<div class="hero-videos">
+<div class="hero-media"><div class="hero-videos">
 <a class="hero-video" href="https://www.youtube.com/watch?v=tFTeMdvyfBs" target="_blank" rel="noopener noreferrer" aria-label="STARGLOW / Slam Dunk -Music Video- のYouTubeページを開く">
 <div class="hero-video-image"><img src="https://i.ytimg.com/vi/tFTeMdvyfBs/hqdefault.jpg" alt="STARGLOW / Slam Dunk -Music Video-" width="480" height="360"><span class="video-play" aria-hidden="true">▶</span></div>
-<div class="hero-video-caption"><span class="eyebrow">MUSIC VIDEO</span><h2>STARGLOW / Slam Dunk -Music Video-</h2><p class="mv-schedule">10/26（月）21:00公開</p><span class="watch-label">YouTube公開ページへ ↗</span></div>
+<div class="hero-video-caption"><span class="eyebrow">MUSIC VIDEO</span><h2>STARGLOW / Slam Dunk -Music Video-</h2><p class="mv-schedule">10/26（月）21:00公開</p></div>
 </a>
 <a class="hero-video" href="https://www.youtube.com/watch?v=tZwkBuaOQw8" target="_blank" rel="noopener noreferrer" aria-label="STARGLOW / Slam Dunk -Teaser- をYouTubeで見る">
 <div class="hero-video-image"><img src="https://i.ytimg.com/vi/tZwkBuaOQw8/hqdefault.jpg" alt="STARGLOW / Slam Dunk -Teaser-" width="480" height="360"><span class="video-play" aria-hidden="true">▶</span></div>
-<div class="hero-video-caption"><span class="eyebrow">TEASER</span><h2>STARGLOW / Slam Dunk -Teaser-</h2><span class="watch-label">YouTubeで見る ↗</span></div>
+<div class="hero-video-caption"><span class="eyebrow">TEASER</span><h2>STARGLOW / Slam Dunk -Teaser-</h2></div>
 </a>
-</div>
+</div><div id="download" class="hero-download"><h2>DOWNLOAD</h2><div class="basket-grid"><button type="button" class="basket-download" data-download="itunes" disabled><span class="basket-ball" aria-hidden="true">🏀</span><span class="basket-service">iTunes</span><span class="gift-mark">🎁可能</span><span class="dl-pending">準備中</span></button>
+<button type="button" class="basket-download" data-download="recochoku" disabled><span class="basket-ball" aria-hidden="true">🏀</span><span class="basket-service">レコチョク</span><span class="gift-mark">🎁可能</span><span class="dl-pending">準備中</span></button>
+<button type="button" class="basket-download" data-download="mora" disabled><span class="basket-ball" aria-hidden="true">🏀</span><span class="basket-service">mora</span><span class="gift-mark" aria-hidden="true">&nbsp;</span><span class="dl-pending">準備中</span></button>
+<button type="button" class="basket-download" data-download="dmusic" disabled><span class="basket-ball" aria-hidden="true">🏀</span><span class="basket-service">dミュージック</span><span class="gift-mark" aria-hidden="true">&nbsp;</span><span class="dl-pending">準備中</span></button>
+<button type="button" class="basket-download" data-download="amazon" disabled><span class="basket-ball" aria-hidden="true">🏀</span><span class="basket-service">Amazon Music</span><span class="gift-mark" aria-hidden="true">&nbsp;</span><span class="dl-pending">準備中</span></button>
+<button type="button" class="basket-download" data-download="mumo" disabled><span class="basket-ball" aria-hidden="true">🏀</span><span class="basket-service">mu-mo</span><span class="gift-mark">🎁可能</span><span class="dl-pending">準備中</span></button>
+<button type="button" class="basket-download" data-download="recochokuHi" disabled><span class="basket-ball" aria-hidden="true">🏀</span><span class="basket-service">レコチョク<br>ハイレゾ</span><span class="gift-mark">🎁可能</span><span class="dl-pending">準備中</span></button>
+<button type="button" class="basket-download" data-download="moraHi" disabled><span class="basket-ball" aria-hidden="true">🏀</span><span class="basket-service">mora<br>ハイレゾ</span><span class="gift-mark" aria-hidden="true">&nbsp;</span><span class="dl-pending">準備中</span></button>
+</div><a class="official-download" href="https://starglow.lnk.to/SlamDunk" target="_blank" rel="noopener noreferrer">公式配信リンク ↗</a></div></div>
 </div>
 </header>
 <div class="road">
@@ -265,43 +274,6 @@
 </div>
 </details>
 </section>
-<section id="download" class="fold-section">
-<details class="section-fold">
-<summary>
-<div class="sectionhead">
-<span>04 /</span>
-<h2>DOWNLOAD</h2>
-</div>
-<span class="fold-icon" aria-hidden="true">
-</span>
-</summary>
-<div class="fold-body">
-<p class="intro">各配信サービスへは、下の公式リンクからアクセスできます。</p>
-<a class="btn" href="https://starglow.lnk.to/SlamDunk" target="_blank" rel="noopener noreferrer">Streaming & Download ↗</a>
-<div class="download" style="margin-top:20px">
-<div class="empty">iTunes<br>
-<small>直接リンク準備中</small>
-</div>
-<div class="empty">レコチョク<br>
-<small>直接リンク準備中</small>
-</div>
-<div class="empty">mora<br>
-<small>直接リンク準備中</small>
-</div>
-<div class="empty">dミュージック<br>
-<small>直接リンク準備中</small>
-</div>
-<div class="empty">Amazon Music<br>
-<small>直接リンク準備中</small>
-</div>
-<div class="empty">mu-mo<br>
-<small>直接リンク準備中</small>
-</div>
-</div>
-</div>
-</details>
-</section>
-
 <footer class="tail">非公式ファンサイトです</footer>
 </main>
 <script>
@@ -309,8 +281,8 @@ function openTarget(){if(!location.hash)return;const target=document.getElementB
 const release=new Date('2026-10-26T00:00:00+09:00');document.querySelector('#release-status').textContent=Date.now()>=release?'OUT NOW':'RELEASE / 10.26';
 for(const b of document.querySelectorAll('[data-key]')){const key='slamdunk_v1_'+b.dataset.key;function paint(done){b.setAttribute('aria-pressed',String(done));b.textContent=(done?'✓ ':'○ ')+b.dataset.label+(done?'（記録済み）':'（未記録）')}try{paint(localStorage.getItem(key)==='1')}catch(e){paint(false)}b.addEventListener('click',()=>{const done=b.getAttribute('aria-pressed')!=='true';try{localStorage.setItem(key,done?'1':'0');paint(done)}catch(e){alert('このブラウザでは記録を保存できません。')}})}
 // 各サービスの購入URLを設定すると、対応する購入リンクを表示します。
-const downloadUrls={itunes:'',recochoku:'',mora:'',dmusic:'',amazon:'',mumo:''};
-Object.values(downloadUrls).forEach((url,i)=>{if(!/^https:\/\//i.test(url))return;const box=document.querySelectorAll('.download .empty')[i];if(!box)return;const link=document.createElement('a');link.className='btn';link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=box.firstChild.textContent+' ↗';box.replaceWith(link);});
+const downloadUrls={"itunes": "https://itunes.apple.com/jp/album/6816815692?ls=1&at=1l3vpUI&app=itunes&ct=LFV_0eb76bf059f82cf60ac44c80a8707cdf&itscg=30440&itsct=catchall_p7&lId=217696309&cId=none&sr=7&src=Linkfire", "recochoku": "https://recochoku.jp/song/S1031659655", "mora": "https://mora.jp/package/43000002/ANTCD-A0000021340/", "dmusic": "https://dmusic.docomo.ne.jp/song/S1031659655", "mumo": "https://sp-m.mu-mo.net/music/13180667/", "recochokuHi": "https://recochoku.jp/song/S1031659655/hires_single", "moraHi": "https://mora.jp/package/43000002/ANTCD-A0000021342_F/", "amazon": "https://www.amazon.co.jp/music/player/albums/B0HLLPKNRF?tag=avexlinkfire-22&ie=UTF8&linkCode=as2&ascsubtag=bf92f5d0670df81db83bf1e7f95b51c3&ref=dmm_acq_soc_jp_u_lfire_lp_x_bf92f5d0670df81db83bf1e7f95b51c3"};
+Object.entries(downloadUrls).forEach(([key,url])=>{if(!/^https:\/\//i.test(url))return;const button=document.querySelector('[data-download="'+key+'"]');if(!button)return;const link=document.createElement('a');link.className=button.className;link.dataset.download=key;link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.innerHTML=button.innerHTML;link.querySelector('.dl-pending')?.remove();button.replaceWith(link);});
 const mvPremiere=document.querySelector('.mv-schedule');if(mvPremiere&&Date.now()>=Date.parse('2026-10-26T21:00:00+09:00'))mvPremiere.textContent='公開中';
 </script>
 </body>
